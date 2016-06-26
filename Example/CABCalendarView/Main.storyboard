@@ -1,23 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e3I-sC-cQj">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="gPH-PF-2HW">
+            <objects>
+                <navigationController id="e3I-sC-cQj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mUU-Zg-pX6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="Dc2-wb-pnB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvK-Te-chV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="433"/>
+        </scene>
+        <!--Calendar View Controller-->
         <scene sceneID="wQg-tq-qST">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="CABViewController" sceneMemberID="viewController">
+                <viewController id="whP-gf-Uak" userLabel="Calendar View Controller" customClass="CABViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vv1-yb-bon" customClass="CABCalendarHeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="9Bo-ID-leO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAe-vq-SZ4" customClass="CABCalendarView">
+                                <rect key="frame" x="0.0" y="25" width="600" height="264"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="AhG-4Z-bNt"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="whP-gf-Uak" id="RJz-md-zdt"/>
+                                    <outlet property="delegate" destination="whP-gf-Uak" id="Vph-Dg-xXI"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Selected Date]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4b-tv-nDu">
+                                <rect key="frame" x="20" y="297" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PLG-bq-b3I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T4b-tv-nDu" firstAttribute="top" secondItem="sAe-vq-SZ4" secondAttribute="bottom" constant="8" id="4De-kh-vgj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vv1-yb-bon" secondAttribute="trailing" constant="-20" id="KFh-g8-AOQ"/>
+                            <constraint firstItem="sAe-vq-SZ4" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-20" id="M3Y-bQ-4fQ"/>
+                            <constraint firstItem="sAe-vq-SZ4" firstAttribute="top" secondItem="vv1-yb-bon" secondAttribute="bottom" id="V23-uC-aVB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T4b-tv-nDu" secondAttribute="trailing" id="WvX-Iq-z1s"/>
+                            <constraint firstItem="vv1-yb-bon" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-20" id="X0Y-bA-q1S"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="T4b-tv-nDu" secondAttribute="leading" id="fr0-rD-gov"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sAe-vq-SZ4" secondAttribute="trailing" constant="-20" id="kZg-xu-k7g"/>
+                            <constraint firstItem="vv1-yb-bon" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="p5T-2Z-Mqm"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Month YYYY" id="drt-eK-rO7"/>
+                    <connections>
+                        <outlet property="calendarView" destination="sAe-vq-SZ4" id="4Ig-YH-ke4"/>
+                        <outlet property="headerView" destination="vv1-yb-bon" id="uJ0-ex-siq"/>
+                        <outlet property="selectedDateLabel" destination="T4b-tv-nDu" id="uw0-tn-8kJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
