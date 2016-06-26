@@ -1,0 +1,16 @@
+PODS:
+  - CABCalendarView (1.0.0)
+
+DEPENDENCIES:
+  - CABCalendarView (from `../`)
+
+EXTERNAL SOURCES:
+  CABCalendarView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CABCalendarView: b572dc5c2acc934bc9743fb6ca85aaab19073a85
+
+PODFILE CHECKSUM: ade9441a9352529d5f5c80f9118ff7c7a59571b4
+
+COCOAPODS: 1.0.0
