@@ -5,10 +5,17 @@
 //  See the LICENSE file for more details, or visit https://opensource.org/licenses/MIT
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
-@interface CABAppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow *window;
+@interface CABEventMarkerView : UIView
+
+/**
+ *  The color of the event marker.
+ */
+@property (strong, nonatomic) UIColor *markerColor;
 
 @end
+
+NS_ASSUME_NONNULL_END
