@@ -1,13 +1,13 @@
 # CABCalendar
 
-[![CI Status](http://img.shields.io/travis/Craig/CABCalendar.svg?style=flat)](https://travis-ci.org/Craig/CABCalendar)
-[![Version](https://img.shields.io/cocoapods/v/CABCalendar.svg?style=flat)](http://cocoapods.org/pods/CABCalendar)
-[![License](https://img.shields.io/cocoapods/l/CABCalendar.svg?style=flat)](http://cocoapods.org/pods/CABCalendar)
-[![Platform](https://img.shields.io/cocoapods/p/CABCalendar.svg?style=flat)](http://cocoapods.org/pods/CABCalendar)
+[![CI Status](http://img.shields.io/travis/craig/CABCalendarView.svg?style=flat)](https://travis-ci.org/craig/CABCalendarView)
+[![Version](https://img.shields.io/cocoapods/v/CABCalendarView.svg?style=flat)](http://cocoapods.org/pods/CABCalendarView)
+[![License](https://img.shields.io/cocoapods/l/CABCalendarView.svg?style=flat)](http://cocoapods.org/pods/CABCalendarView)
+[![Platform](https://img.shields.io/cocoapods/p/CABCalendarView.svg?style=flat)](http://cocoapods.org/pods/CABCalendarView)
 
 An iOS calendar view component with vertical scrolling and auto-layout support.
 
-![alt text](https://github.com/Frakur/CABCalendar/raw/master/Screenshot.png "CABCalendarView example")
+![alt text](https://github.com/Frakur/CABCalendarView/raw/master/Screenshot.png "CABCalendarView example")
 
 ## Usage
 
@@ -25,17 +25,17 @@ You should also set a data source and delegate and implement these methods to ge
 
 ## Installation
 
-CABCalendar is available through [CocoaPods](http://cocoapods.org). To install
+CABCalendarView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CABCalendar"
+pod "CABCalendarView"
 ```
 
 ## Author
 
-Craig, craigbrown24@gmail.com
+craig, craigbrown24+cocoapod@gmail.com
 
 ## License
 
-CABCalendar is available under the MIT license. See the LICENSE file for more info.
+CABCalendarView is available under the MIT license. See the LICENSE file for more info.

@@ -22,7 +22,7 @@ This calendar view component can be used in an iOS app to easily add a slick and
                        DESC
 
   s.homepage         = 'https://github.com/Frakur/CABCalendarView'
-  # s.screenshots     = 'https://github.com/Frakur/CABCalendar/raw/master/Screenshot.png'
+  # s.screenshots     = 'https://github.com/Frakur/CABCalendarView/raw/master/Screenshot.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'craig' => 'craigbrown24+cocoapod@gmail.com' }
   s.source           = { :git => 'https://github.com/Frakur/CABCalendarView.git', :tag => s.version.to_s }
