@@ -1,0 +1,6 @@
+framework module CABCalendarView {
+  umbrella header "CABCalendarView-umbrella.h"
+
+  export *
+  module * { export * }
+}
