@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CABCalendarView_Example' do
+  pod 'CABCalendarView', :path => '../'
+
+  target 'CABCalendarView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
