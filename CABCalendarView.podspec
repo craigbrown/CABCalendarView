@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CABCalendarView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'An iOS calendar view component with vertical scrolling and auto-layout support.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ This calendar view component can be used in an iOS app to easily add a slick and
   s.source           = { :git => 'https://github.com/Frakur/CABCalendarView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/craigb24'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'CABCalendarView/Classes/**/*'
 
