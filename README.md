@@ -1,4 +1,4 @@
-# CABCalendar
+# CABCalendarView
 
 [![CI Status](http://img.shields.io/travis/craig/CABCalendarView.svg?style=flat)](https://travis-ci.org/craig/CABCalendarView)
 [![Version](https://img.shields.io/cocoapods/v/CABCalendarView.svg?style=flat)](http://cocoapods.org/pods/CABCalendarView)
@@ -7,7 +7,18 @@
 
 An iOS calendar view component with vertical scrolling and auto-layout support.
 
-![alt text](https://github.com/Frakur/CABCalendarView/raw/master/Screenshot.png "CABCalendarView example")
+![alt text](https://github.com/Frakur/CABCalendarView/raw/master/Screenshot.gif "CABCalendarView example")
+
+## Why use CABCalendarView?
+
+- Vertical scrolling!
+- Mark events on specific days!
+- Familiar data source/delegate pattern!
+- Well documented!
+- Integration with Xcode Interface Builder (IBDesignable)!
+- All dates in the past and future fully implemented!
+
+I've also [written an article with more details](http://craig24.com/cabcalendarview-for-ios/) on my website. Check it out!
 
 ## Usage
 
@@ -34,7 +45,7 @@ pod "CABCalendarView"
 
 ## Author
 
-craig, craigbrown24+cocoapod@gmail.com
+craig, [@CraigAB24](https://twitter.com/CraigAB24)
 
 ## License
 
